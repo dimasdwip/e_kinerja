@@ -28,6 +28,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/admin/laporan', [AdminController::class, 'laporan'])->name('admin.laporan');
     Route::get('/admin/team', [AdminController::class, 'team'])->name('admin.team');
     Route::get('/admin/mapping', [AdminController::class, 'mapping'])->name('admin.mapping');
+    Route::get('/admin/profile', [AdminController::class, 'profile'])->name('admin.profile');
     
     // User
     Route::get('/user/dashboard', [UserController::class, 'index'])->name('user.dashboard');

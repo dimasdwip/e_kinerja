@@ -80,7 +80,7 @@
                     </div>
                 </button>
                 <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item">
+                    <a href="{{ route('admin.profile') }}" class="dropdown-item">
                         <i class="fas fa-user-circle"></i>
                         <span>Profil Saya</span>
                     </a>
