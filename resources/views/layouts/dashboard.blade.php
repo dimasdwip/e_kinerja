@@ -78,28 +78,14 @@
                     <div class="user-avatar">
                         {{ strtoupper(substr(auth()->user()->name ?? 'U', 0, 1)) }}
                     </div>
-                </button>
-                <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item">
-                        <i class="fas fa-user-circle"></i>
-                        <span>Profil Saya</span>
-                    </a>
-                    <a href="#" class="dropdown-item">
-                        <i class="fas fa-cog"></i>
-                        <span>Pengaturan</span>
-                    </a>
-                    <a href="#" class="dropdown-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>Pesan</span>
-                    </a>
-                    <a href="#" class="dropdown-item">
-                        <i class="fas fa-question-circle"></i>
-                        <span>Bantuan</span>
-                    </a>
-                    <a href="#" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        <i class="fas fa-sign-out-alt"></i>
-                        <span>Keluar</span>
-                    </a>
+                    <div class="dropdown-content">
+                        <a href="#"><i class="fas fa-user-circle"></i> Profil Saya</a>
+                        <a href="#"><i class="fas fa-cog"></i> Pengaturan</a>
+                        <a href="#"><i class="fas fa-envelope"></i> Pesan</a>
+                        <a href="#"><i class="fas fa-question-circle"></i> Bantuan</a>
+                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            <i class="fas fa-sign-out-alt"></i> Keluar
+                        </a>
 
                     <!-- Form logout disembunyikan -->
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
