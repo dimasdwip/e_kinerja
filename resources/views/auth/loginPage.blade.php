@@ -34,7 +34,7 @@
                 <p>Silakan masuk ke akun Anda</p>
             </div>
 
-            <form id="loginForm" action="{{ route('login') }}" method="POST">
+            <form id="loginForm" action="{{ route('login.store') }}" method="POST">
                 @csrf
 
                 <!-- Username -->

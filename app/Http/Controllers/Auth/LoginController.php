@@ -35,7 +35,7 @@ class LoginController extends Controller
             Auth::login($user);
             $request->session()->regenerate();
 
-            // 🔥 Redirect berdasarkan role
+            // Redirect berdasarkan role
             if ($user->role === 'superadmin') {
                 return redirect()->route('superadmin.dashboard')->with('success', 'Selamat datang, Super Admin!');
             } elseif ($user->role === 'admin') {
