@@ -82,7 +82,7 @@
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="dropdown-content">
-                        <a href="#"><i class="fas fa-user-circle"></i> Profil Saya</a>
+                        <a href="{{ route('profile') }}"><i class="fas fa-user-circle"></i> Profil Saya</a>
                         <a href="#"><i class="fas fa-cog"></i> Pengaturan</a>
                         <a href="#"><i class="fas fa-envelope"></i> Pesan</a>
                         <a href="#"><i class="fas fa-question-circle"></i> Bantuan</a>
